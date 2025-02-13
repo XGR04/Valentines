@@ -8,6 +8,15 @@ body {
     font-family: Arial, sans-serif;
   }
   
+/* Add this to your CSS file */
+#valentine-header {
+  color: salmon;
+  text-align: center;
+  margin-bottom: 15em;
+  font-family: 'Gochi Hand', cursive;
+}
+
+
   .slot-machine {
     display: flex;
     flex-direction: column;

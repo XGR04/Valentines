@@ -24,18 +24,17 @@ function setup() {
   let container = createDiv().class('slot-machine');
   container.position(windowWidth / 2 - 160, windowHeight / 2 - 200);
 
-  // Added header with custom text at the top
-  let header = createElement('h1', "It’s near February 14th, maybe I can be the 1 4 you!");
-  header.parent(container);
-
   let reelContainer = createDiv().class('reel-container').parent(container);
-  createCanvas(300, 250).parent(reelContainer);
+  createCanvas(300, 100).parent(reelContainer);
 
   reels = [0, 0, 0];
 
   createButton('SPIN')
     .mousePressed(spinReels)
     .parent(container);
+
+  reactionDiv = createDiv().class('reaction-container').parent(container);
+  reactionDiv.style('display', 'none');
 }
 
 function draw() {
