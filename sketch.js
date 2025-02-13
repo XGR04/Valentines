@@ -38,7 +38,6 @@ function setup() {
     .parent(container);
 }
 
-
 function draw() {
   background(255);
   for (let i = 0; i < 3; i++) {
